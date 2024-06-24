@@ -25,7 +25,7 @@ def tim(message:mes):
 def start(message:mes):
     kb = ikm()
     kb.row(ikb('🐹', callback_data=f'click'))
-    bot.send_message(message.chat.id, f"кликай", reply_markup=kb)
+    bot.send_message(message.chat.id, f"тапай", reply_markup=kb)
 
 @bot.callback_query_handler(func = lambda call:True)
 def callback(call: telebot.types.CallbackQuery):
