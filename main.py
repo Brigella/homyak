@@ -5,8 +5,9 @@ from telebot.types import InlineKeyboardButton as ikb
 import time
 import s_taper as s
 from s_taper.consts import *
+import token
 
-bot = telebot.TeleBot('7230952942:AAHMrHqeXYUQ95l35rooDUtBtn8gfsL89MY')
+bot = telebot.TeleBot(token.TOKEN)
 
 db_table1 = {'user_id':INT+KEY,'clicks':INT}
 connect1 = s.Taper('db1','db.db').create_table(db_table1)
